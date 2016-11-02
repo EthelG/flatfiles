@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }} | {{ site.title }}</title> <!--appel du titre donnée à la page (dans index) et du titre donnée dans le config-->
+</head>
+<body>
+    <header>
+        {% include header.html %}
+    </header>
+    <main>
+        <a href="../contact.md">Contact</a>
+        <h1>{{ page.title }}</h1> 
+        {{content}} <!--contenu tou simplement-->
+    </main>
+    <footer>
+        {% include footer.html %}
+    </footer>
+</body>
+</html>
