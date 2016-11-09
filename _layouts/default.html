@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ page.title }} | {{ site.title }}</title> <!--appel du titre donnée à la page (dans index) et du titre donnée dans le config-->
+    <title>{{ page.title }} | {{ site.title }}</title> <!--appel du titre donnée à la page (dans index) et du titre donné dans le config-->
 </head>
 <body>
     <header>
         {% include header.html %}
     </header>
     <main>
-        <a href="../contact.md">Contact</a>
         <h1>{{ page.title }}</h1> 
-        {{content}} <!--contenu tou simplement-->
+        {{content}} <!--contenu de la page index.md tout simplement-->
+        <article>
+              {% for post in site.posts %}
+                <li>
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+        </article>
     </main>
     <footer>
         {% include footer.html %}

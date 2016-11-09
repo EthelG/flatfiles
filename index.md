@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Ma première page
+title: Accueil
+navigation_weight: 1
 ---
 
 contenu
