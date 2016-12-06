@@ -1,0 +1,61 @@
+<h4 id="les-collections">Les collections</h4>
+
+<ul>
+  <li>
+    <p>Dans config :</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  collections:
+    cours:
+      output: true
+        
+  defaults: //pour rajouter les layout
+  
+      scope:
+        layout: page
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Dans footer :</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  &lt;li&gt;
+      &lt;img src="" alt="Bouclejekyll"/&gt;
+      &lt;a href="/cours/bouclejekyll.html"&gt;Bouclejekyll&lt;/a&gt;
+      &lt;p&gt;&lt;/p&gt;
+  &lt;/li&gt;
+    
+  &lt;li&gt;
+      &lt;img src="" alt="Collections"/&gt;
+      &lt;a href="/cours/collections.html"&gt;Collections&lt;/a&gt;
+      &lt;p&gt;&lt;/p&gt;
+  &lt;/li&gt;
+    
+  &lt;li&gt;
+      &lt;img src="" alt="Git"/&gt;
+      &lt;a href="/cours/git.html"&gt;Git&lt;/a&gt;
+      &lt;p&gt;&lt;/p&gt;
+  &lt;/li&gt;
+    
+  &lt;li&gt;
+      &lt;img src="" alt="Jekyll"/&gt;
+      &lt;a href="/cours/jekyll.html"&gt;Jekyll&lt;/a&gt;
+      &lt;p&gt;&lt;/p&gt;
+  &lt;/li&gt;
+</code></pre>
+    </div>
+  </li>
+  <li>
+    <p>Et dans les fichiers .md :</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>  ---
+  ---
+</code></pre>
+    </div>
+  </li>
+</ul>
+
+<p>Pour appeler un style css sur toutes les pages, posts, etc :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>    href="/assets/css/style.css"
+</code></pre>
+</div>

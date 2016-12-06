@@ -2,44 +2,46 @@
 <html>
 <head>
     <title>Contact | Ma première page Github</title> <!--appel du titre donnée à la page (dans index) et du titre donné dans le config-->
+    <link rel="stylesheet" href="/assets/css/style.css"> <!--ne pas changer l'extension .css-->
 </head>
 <body>
     <header>
-        <img src="../Tumblr/banniere.jpg" />
-<h1>Ma première page</h1>
-<nav class="main-nav">
-  <ul>
-    
-    
-      
-        <li>
-          <a href="/" >
-            Accueil
-          </a>
-        </li>
-      
-    
-      
-        <li>
-          <a href="/contact.html" class="active">
-            Contact
-          </a>
-        </li>
-      
-    
-      
-        <li>
-          <a href="/equipe.html" >
-            Equipe
-          </a>
-        </li>
-      
-     <!--boucle-->
-  </ul>
-</nav>
+        <div class="wrapper">
+    <h1>Bienvenue</h1>
+    <nav class="main-nav">
+      <ul>
+        
+        
+          
+            <li>
+              <a href="/" >
+                Accueil
+              </a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/contact.html" class="active">
+                Contact
+              </a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="/equipe.html" >
+                Equipe
+              </a>
+            </li>
+          
+         <!--boucle-->
+      </ul>
+    </nav>
+</div>
     </header>
     <main>
-        <h1>Contact</h1> 
+        <h2>Contact</h2> 
         <h1 id="me-contacter">Me contacter</h1>
  <!--contenu de la page index.md tout simplement-->
         <article>
@@ -55,12 +57,36 @@
         </article>
     </main>
     <footer>
-        <img src="../Tumblr/favicon.icon" />
-<p>
-    Mon adresse : <br/>
-    41 rue des Martyrs <br/>
-    Elbeuf
-</p>
+        <div class="wrapper">
+
+    
+    <li>
+        <img src="" alt="Bouclejekyll"/>
+        <a href="/cours/bouclejekyll.html">Bouclejekyll</a>
+    </li>
+    
+    <li>
+        <img src="" alt="Collections"/>
+        <a href="/cours/collections.html">Collections</a>
+    </li>
+    
+    <li>
+        <img src="" alt="Git"/>
+        <a href="/cours/git.html">Git</a>
+    </li>
+    
+    <li>
+        <img src="" alt="Jekyll"/>
+        <a href="/cours/jekyll.html">Jekyll</a>
+    </li>
+    
+
+    <p>
+        Mon adresse : <br/>
+        41 rue des Martyrs <br/>
+        Elbeuf
+    </p>
+</div>
     </footer>
 </body>
 </html>

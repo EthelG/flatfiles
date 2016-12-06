@@ -1,1 +1,10 @@
 title: Ma première page Github
+
+collections:
+  cours:
+    output: true
+
+defaults:
+  
+    scope:
+      layout: page

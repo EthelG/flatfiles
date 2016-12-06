@@ -1,0 +1,48 @@
+<h4 id="cours-sur-les-boucles-jekyll-">Cours sur les boucles Jekyll :</h4>
+<p>Faire une boucle sur une nav :</p>
+<ul>
+  <li>ajouter un titre à toutes les pages à ajouter</li>
+  <li>ajouter “navigation_weight: (la place numérique de la page dans la nav)” ou ajouter 01.(nomdufichier), etc</li>
+  <li>
+    <p>ajouter dans le header :</p>
+
+    <div class="highlighter-rouge"><pre class="highlight"><code>      &lt;li&gt;
+        &lt;a href="/" &gt;
+          Accueil
+        &lt;/a&gt;
+      &lt;/li&gt;
+      
+    
+      
+      &lt;li&gt;
+        &lt;a href="/contact.html" &gt;
+          Contact
+        &lt;/a&gt;
+      &lt;/li&gt;
+      
+    
+      
+      &lt;li&gt;
+        &lt;a href="/equipe.html" &gt;
+          Equipe
+        &lt;/a&gt;
+      &lt;/li&gt;
+      
+   &lt;!--boucle--&gt;
+</code></pre>
+    </div>
+  </li>
+</ul>
+
+<p>Faire une boucle pour appeler des articles :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>      &lt;li&gt;
+        &lt;a href="/2016/11/08/mon-second-article.html"&gt;Mon Second Article&lt;/a&gt;
+      &lt;/li&gt;
+    
+      &lt;li&gt;
+        &lt;a href="/2016/11/08/mon-premier-article.html"&gt;Mon Premier Article&lt;/a&gt;
+      &lt;/li&gt;
+</code></pre>
+</div>
+
