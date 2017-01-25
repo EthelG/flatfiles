@@ -1,18 +1,39 @@
 ---
 ---
-//*{
-//    margin: 0;
-//    padding: 0;
-//}
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
 body,ul{
     list-style-type: none;
+    font-family: 'Lato', sans-serif;
 }
 
 header{
     background: url('../img/banniere.jpg') fixed;
     background-size: cover; /*image prend toute la largeur de la page sans se déformer */
+    text-align: center;
+    color: white;
 }
+nav ul li{
+    display: inline-block;
+}
+nav{
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
+
 main,.wrapper{
     max-width: 45em;
     margin: auto;
+}
+
+.product{
+    text-align: center;
+    display: inline-block;
+}
+.thumbnail{
+    width: 200px;
+    height: 250px;
 }

@@ -1,6 +1,8 @@
 title: Ma première page Github
 
 collections:
+  products:
+    output: true
   cours:
     output: true
 

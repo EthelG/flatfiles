@@ -1,0 +1,21 @@
+<div class="product">
+  
+    {% for tissus in site.products %}
+        <a class="product" href="{{ site.baseurl }}{{ tissus.url }}" class="image">
+        <img src="{{ tissus.image }}" alt="{{ tissus.name }}" class="thumbnail"/>
+        <p>{{ tissus.name }}</p>
+        </a>
+
+        <button class="snipcart-add-item"
+        data-item-name="{{ tissus.name }}"
+        data-item-image="{{ tissus.image }}"
+        data-item-url="{{ site.baseurl }}"
+        data-item-price="{{ tissus.price }}"
+        data-item-width="{{ tissus.width }}"
+        data-item-material="{{ tissus.material }}"
+        data-item-color="{{ tissus.color }}">
+        Buy it for {{ tissus.price }} $
+        </button>
+    <br />
+    {% endfor %}
+</div>
