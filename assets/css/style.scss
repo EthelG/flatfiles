@@ -7,6 +7,7 @@
 body,ul{
     list-style-type: none;
     font-family: 'Lato', sans-serif;
+    height: 100%;
 }
 
 header{
@@ -14,14 +15,19 @@ header{
     background-size: cover; /*image prend toute la largeur de la page sans se déformer */
     text-align: center;
     color: white;
+    height: 200px;
 }
 nav ul li{
     display: inline-block;
 }
-nav{
+nav a{
     color: white;
-    text-align: right;
     text-decoration: none;
+}
+nav{
+    text-align: right;
+    position: relative;
+    top: 125px;
 }
 
 main,.wrapper{
@@ -36,4 +42,13 @@ main,.wrapper{
 .thumbnail{
     width: 200px;
     height: 250px;
+}
+footer{
+    background-color: cadetblue;
+    width: 100%;
+    padding: 15px;
+}
+
+.wrapper li{
+    display: inline-block;
 }
